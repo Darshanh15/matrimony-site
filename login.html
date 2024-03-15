@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Login page</title>
+</head>
+<body> 
+    <!-- outer div given background this div -->
+    <div class="login-body"> 
+        <!-- this div givn to outer line and effects -->
+        <div class="cardss">
+            <!-- form section given the we have such type filds -->
+            <form action="" autocomplete="off" onsubmit="validcheck(event)">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" name="text" id="Username" placeholder="Username" minlength="5" maxlength="15" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="psw" id="psw" placeholder="password" minlength="5" maxlength="15" required>
+                </div>
+
+                <div class="forgetpsw">
+                    <a href="#">Forget Password</a>
+                </div>
+                <strong id="status"></strong>
+
+                <button type="submit" class="btn">Login</button>
+                <div class="register">
+                    <p>Don't have any acout? <a href="register.html">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validcheck(e){
+            e.preventDefault();
+
+            let user = document.getElementById("Username").value; // take a value by id
+            let status = document.getElementById('status'); // it will assing the value;
+
+            console.log(user)
+
+            if (user.length === 0) {
+                status.innerHTML = 'plz fil it all the filds';
+                status.style.color = "red";
+            // }else if (user.length < 5){
+            //     status.innerHTML = 'grter than 5 char';
+            //     status.style.color = "red";
+            // }else if (user.length > 15){
+            //     status.innerHTML = 'less than 15 char';
+            //     status.style.color = "red";
+            }else{
+                // status.innerHTML = 'valid';
+                // status.style.color = "green"; 
+                window.location.href = "index.html";                  
+            }
+    }
+    </script>
+</body>
+</html>

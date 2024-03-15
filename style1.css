@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background: url(https://s3-ap-south-1.amazonaws.com/pureprayer-web/wp-content/uploads/2018/02/28161324/Kadali_Vivah_.jpg) no-repeat;
+    /* background: rebeccapurple; */
+    background-size: cover;
+    background-position: center;
+}
+
+ .cardss{
+    width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.cardss h1{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cardss .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2) ;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.forgetpsw a{
+    display: flex;
+    font-size: 14px;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.forgetpsw a:hover{
+    display: flex;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 15px;
+    text-decoration: underline;
+}
+
+.cardss .btn{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12); /* tapply for showd using boxshadow site*/
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.register p a{
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    margin: 10px;
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.register-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    /* background: url(https://th.bing.com/th/id/OIP.5FhS67RpF4A4lO0jwc4HwAHaE7?w=849&h=565&rs=1&pid=ImgDetMain0) no-repeat; */
+    background: url(https://i.pinimg.com/originals/9f/7e/c9/9f7ec9cf0a7ead09b84cfea356a3cb2f.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.input-radio{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
